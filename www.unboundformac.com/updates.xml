@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <channel>
+      <title>Unbound's Changelog</title>
+      <link>http://www.unboundformac.com/updates.xml</link>
+      <description>Most recent changes with links to updates.</description>
+      <language>en</language>
+      
+      <item>
+	    <title>Version 1.0.9</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.9</h2>
+	        <p>Bug Fixes and Performance Improvements</p>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 09 December 2014 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.9.zip"
+	               sparkle:version="1.0.9"
+	               length="12363314"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.8</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.8</h2>
+	        <p>Bug Fixes and Performance Improvements</p>
+	    ]]>
+	    </description>
+	    <pubDate>Mon, 30 June 2014 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.8.zip"
+	               sparkle:version="1.0.8"
+	               length="12363314"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.7</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.7</h2>
+	        <p>Bug Fixes and Performance Improvements</p>
+	    ]]>
+	    </description>
+	    <pubDate>Thu, 20 March 2014 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.7.zip"
+	               sparkle:version="1.0.7"
+	               length="12363314"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.6</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.6</h2>
+	        <p>Bug Fixes and Performance Improvements</p>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 28 January 2014 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.6.zip"
+	               sparkle:version="1.0.6"
+	               length="12228582"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.5</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.5</h2>
+	        <p>Bug Fixes and Performance Improvements</p>
+	        <ul>
+	        <li>Fullscreen photo updates correctly when edited outside of app</li>
+	        <li>Fix for caption saving</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 7 January 2014 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.5.zip"
+	               sparkle:version="1.0.5"
+	               length="12370677"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.4</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.4</h2>
+	        <p>Bug Fixes and Performance Improvements</p>
+	        <ul>
+	        <li>Much better file scanning performance</li>
+	        <li>Lots of little bug fixes</li>
+	        <li>Improved file deletion</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Thu, 12 December 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.4.zip"
+	               sparkle:version="1.0.4"
+	               length="12370226"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.3</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.3</h2>
+	        <p>New icon and bug fixes.</p>
+	        <ul>
+	        <li>New icon to match upcoming iOS7 iPhone and iPad app icons.</li>
+	        <li>Extended trial period</li>
+	        <li>Performance improvements</li>
+	        <li>Bug fixes</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 5 November 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.3.zip"
+	               sparkle:version="1.0.3"
+	               length="12235045"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.2</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.2</h2>
+	        <p>Only create .unbound files when in the dropbox directory</p>
+	        <ul>
+	        <li>Extended trial period</li>
+	        <li>Performance improvements</li>
+	        <li>Bug fixes</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Wed, 30 October 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.2.zip"
+	               sparkle:version="1.0.2"
+	               length="12235045"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0.1</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0.1</h2>
+	        <p>Fixed some issues with file tracking getting disabled.</p>
+	        <ul>
+	        <li>Extended trial period</li>
+	        <li>Added new help menu item to get diagnostic logs./li>
+	        <li>Performance improvements</li>
+	        <li>Bug fixes</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Thu, 26 September 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.1.zip"
+	               sparkle:version="1.0.1"
+	               length="18206443 "
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 1.0</title>
+	    <description><![CDATA[
+	        <h2>Trial Version 1.0</h2>
+	        <p>Fixes issues with crashing on first launch and adds video support.</p>
+	        <ul>
+	        <li>Extended trial period</li>
+	        <li>Support for Videos in your Library</li>
+	        <li>Performance improvements</li>
+	        <li>Bug fixes</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 20 August 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.zip"
+	               sparkle:version="1.0"
+	               length="12228586"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 0.9.60</title>
+	    <description><![CDATA[
+	        <h2>Beta Version 0.9.60</h2>
+	        <p>Fixes for file scanning and an extended beta period.</p>
+	        <ul>
+	        <li>Extended beta period</li>
+	        <li>Improved file system scanning and updates</li>
+	        <li>Performance improvements</li>
+	        <li>Bug fixes</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 23 July 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Beta_0.9.60.zip"
+	               sparkle:version="0.9.60"
+	               length="10667243"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 0.9.50</title>
+	    <description><![CDATA[
+	        <h2>Beta Version 0.9.50</h2>
+	        <p>Lots of fixes and an extended beta period.</p>
+	        <ul>
+	        <li>Extended beta period</li>
+	        <li>Improved file system scanning and updates</li>
+	        <li>Improved database performance</li>
+	        <li>Improved albums view scrolling</li>
+	        <li>Improved date scanning</li>
+	        <li>Performance improvements</li>
+	        <li>Bug fixes</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Mon, 23 May 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Beta_0.9.50.zip"
+	               sparkle:version="0.9.50"
+	               length="10650434"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 0.9.35</title>
+	    <description><![CDATA[
+	        <h2>Beta Version 0.9.35</h2>
+	        <p>Fix for initial load.</p>
+	        <ul>
+	        <li>Fix so initial load populates correctly</li>
+	        <li>Changed no-photos message in main window</li>
+	        <li>Performance improvements</li>
+	        <li>Bug fixes</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Mon, 23 May 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Beta_0.9.35.zip"
+	               sparkle:version="0.9.35"
+	               length="10623743"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 0.9.3</title>
+	    <description><![CDATA[
+	        <h2>Beta Version 0.9.3</h2>
+	        <p>We've added easy photos import and fixed some bugs.</p>
+	        <ul>
+	        <li>Import button on album and thumb view allow easy importing of photos and folders</li>
+	        <li>Bug fixes related to core data crashes</li>
+	        <li>Performance improvements</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Mon, 23 May 2013 09:56:00 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Beta_0.9.3.zip"
+	               sparkle:version="0.9.3"
+	               length="10604137"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 0.9.2</title>
+	    <description><![CDATA[
+	        <h2>Beta Version 0.9.2</h2>
+	        <p>This is a small set of fixes</p>
+	        <ul>
+	        <li>Fixes for full photo scan not completing</li>
+	        <li>Bug fixes</li>
+	        <li>Performance improvements</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Mon, 07 May 2013 14:42:03 +0000</pubDate>
+	    <enclosure url="http://unboundformac.s3.amazonaws.com/binaries/Unbound_Beta_0.9.2.zip"
+	               sparkle:version="0.9.2"
+	               length="10595343"
+	               type="application/octet-stream" />
+	               
+	  </item>
+      
+      <item>
+	    <title>Version 0.9.1</title>
+	    <description><![CDATA[
+	        <h2>Beta Version 0.9.1</h2>
+	        <p>This is a small set of updates</p>
+	        <ul>
+	        <li>Bug fixes</li>
+	        <li>Performance improvements</li>
+	        </ul>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 30 Apr 2013 14:42:03 +0000</pubDate>
+	    <enclosure url="http://www.unboundformac.com/binaries/Unbound_0.9.1.zip"
+	               sparkle:version="0.9.1"
+	               length="10592712"
+	               type="application/octet-stream" />
+	               
+	</item>
+
+	<item>
+	    <title>Version 0.9.0 (initial version)</title>
+	    <description><![CDATA[
+	        <h2>Initial Beta Release</h2>
+	        <p></p>
+	    ]]>
+	    </description>
+	    <pubDate>Tue, 30 Apr 2013 14:32:03 +0000</pubDate>
+	    <enclosure url="http://www.unboundformac.com/binaries/Unbound_0.9.0.dmg.zip"
+	               sparkle:version="0.9.0"
+	               length="14588369"
+	               type="application/octet-stream" />
+	               
+	</item>
+
+ </channel>
+</rss>

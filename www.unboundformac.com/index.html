@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- test -->
+  <head>
+    <meta charset="utf-8">
+    <title>Unbound for Mac - A Faster, Simpler Photo Manager</title>
+
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--<script>!window.jQuery && document.write(unescape('%3Cscript src="./lib/jquery.js"%3E%3C/script%3E'));</script>-->
+
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+	<script type="text/javascript">
+
+
+	// For use within normal web clients
+	var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+	// For use within iPad developer UIWebView
+	// Thanks to Andrew Hedges!
+	var ua = navigator.userAgent;
+	var isiPad = /iPad/i.test(ua) || /iPhone OS 3_1_2/i.test(ua) || /iPhone OS 3_2_2/i.test(ua);
+
+	if(isiPad)
+	{
+		viewport = document.querySelector("meta[name=viewport]");
+		viewport.setAttribute('content', 'width=1024px;');
+	}
+
+
+	$(document).ready(function() {
+
+		/* Apply fancybox to multiple items */
+
+		$("a.screenshots").fancybox({
+			'transitionIn'	:	'elastic',
+			'transitionOut'	:	'fade',
+			'speedIn'		:	600,
+			'speedOut'		:	200,
+			'overlayShow'	:	false
+		});
+
+		$("a.openscreenshots").on("click", function(){
+			$("a.screenshots").eq(0).trigger("click");
+		});
+
+
+		$(".downloadform").fancybox({
+		'scrolling'		: 'no',
+		'titleShow'		: false
+		});
+
+
+		$('#mc-embedded-subscribe-form').submit(function(e) {
+
+
+			  var startDownload = function() {
+
+				  $("#form-download-info").show();
+
+				  var downloadURL = "http://unboundformac.s3.amazonaws.com/binaries/Unbound_Trial_1.0.9.dmg";
+
+				  $("#downloadLink").attr('href', downloadURL);
+
+				  setTimeout(function(){
+
+				  	window.location = downloadURL;
+
+
+			      }, 2000);
+			  };
+
+			  var $this = $(this);
+			  $.ajax({
+			      type: "GET", // GET & url for json slightly different
+			      // url: "http://unboundformac.com/mc/store-address.php",
+	              url: "http://www.pixiteapps.com/mc/store-address.php",
+			      data: $(this).serialize(),
+			      error       : function(request, status, error) {
+
+			      	// Something went wrong, parse data.msg string and display message
+
+		              $("#mce-error-response").show();
+		              $("#mc-embedded-subscribe").val("Retry Email Submission");
+
+		              $("#mce-error-response").append("<p>"+request.responseText+"</p>");
+
+		              startDownload();
+
+			      },
+			      success     : function(data, text, request) {
+
+			          if (request.responseText != "success") {
+			              // Something went wrong, parse data.msg string and display message
+
+			              $("#mce-error-response").show();
+			              $("#mc-embedded-subscribe").val("Retry Email Submission");
+
+			              $("#mce-error-response").append("<p>"+request.responseText+"</p>");
+
+			              startDownload();
+
+			          } else {
+			              // It worked, so hide form and display thank-you message.
+			              $("#mce-success-response").show();
+			              $("#mc-embedded-subscribe").hide();
+			              $("#mce-error-response").hide();
+
+
+
+
+			              startDownload();
+			          }
+			      }
+			  });
+			  return false;
+	  });
+
+	});
+
+	</script>
+
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27766206-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Google Plus One -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+  </head>
+
+  <body>
+
+
+<div class="blurrybackground">
+
+<div id="blurrybackgroundimg"></div>
+    <div class="container">
+
+      <div class="row firstrow">
+
+
+	    <div class="span7 centered">
+	    	<a id="devicelink" class="screenshots mac-bezel" rel="screenshots" href="screenshots/screenshot-1.jpg" title="Unbound Albums View"><img src="img/unbound_dropbox_screenshot.jpg" alt="Unbound for Mac" /></a>
+	    </div>
+
+
+	    <div class="span5">
+
+	    <h1> <img src="img/unbound_icon.png" class="unboundicon"> Unbound for Mac</h1><p class="centered">A Faster, Simpler Photo Manager.</p>
+
+
+	      <div class="centered appstorelink">
+
+
+
+	      <!--<a class="blueapplink downloadform" href="#mc_embed_signup"  onClick="javascript: _gaq.push(['_trackPageview', '/open_download_form']); " target="_blank"><img src="img/Download_Trial.svg" width=180 alt="Download Free Trial" /></a>-->
+
+	      <a class="blueapplink" href="https://itunes.apple.com/us/app/unbound/id690375005?ls=1&mt=12"  onClick="javascript: _gaq.push(['_trackPageview', '/open_itunes']); "><img src="img/Available_on_the_App_Store.svg" width=180 alt="Available in the App Store" /></a>
+
+	      <p id="ipadsitelink"><a href="http://unboundapp.com">or check out Unbound for iPhone and iPad →</a></p>
+
+	      <div style="clear: both;"></div>
+
+	      <!--
+	      <div class="socialbuttons">
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FFlickring-for-iPad%2F243098835770951&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=235637449853856" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+				<g:plusone></g:plusone>
+				</div>
+		   </div>
+		   -->
+
+	      </div>
+
+		</div>
+	   </div>
+    </div>
+  </div>
+
+<div class="texturedbg">
+<div class="container">
+
+	   <div class="row-fluid dropshadowrow aboveblurry"><div class="span7"></div><div class="span5 dropshadow-corner"><img src="img/drop-shadow-corner.png" alt=""></div></div>
+
+
+	   <!-- Quote Section -->
+
+	   <div class="row">
+	   <div class="span12">
+		   <h2>Browse, Organize, Play Slideshows, and More</h2>
+	   </div>
+
+	   </div>
+	   <div class="row">
+
+	   <div class="span6 alignright spacetop">
+		   <h3>Up to 3x Faster than iPhoto<img class="icon" src="img/speed.jpg" alt="Speed" /></h3>
+		   <p>Unbound was designed with speed as a priority. Everything from the initial app launch to scrolling through your thumbs is incredibly responsive. Access photos whenever you want without having to wait.</p>
+
+	   </div>
+	   <div class="span6">
+	   <a rel="screenshots" class="screenshots" href="screenshots/screenshot-2.jpg" title="Unbound Albums with Dark Theme">
+	   <img src="img/imac-bezel-photo-albums.jpg" alt="Photo Albums"/>
+	   </a>
+	   </div>
+
+	   </div>
+
+	   <div class="row"><div class="span12"><div class="seperator"></div></div></div>
+
+	   <div class="row">
+
+	   <div class="span6">
+	   <a rel="screenshots" class="screenshots" href="screenshots/screenshot-3.jpg" title="Unbound Album Thumbnails with Sidebar">
+	   <img src="img/macbook-bezel-photo-thumbs.jpg" alt="Photo Albums"/>
+	   </a>
+	   </div>
+
+	   <div class="span6 alignleft spacetop">
+
+		   <h3><img class="icon" src="img/browse.jpg" alt="Easy Organization" />Easy Organization</h3>
+		   <p>Unbound keeps your photo organization simple. Use albums to group your photos and easily find them later. Instant search puts any album within a few taps of your keyboard.</p>
+	   </div>
+
+	   </div>
+
+	   	    <div class="row"><div class="span12"><div class="seperator"></div></div></div>
+
+	   <div class="row"><div class="span12 centered">
+		   <h2>Your Files. Right Where You Left Them</h2>
+
+		   <img src="img/unbound-file-system-library.jpg" alt="File System as Library"/>
+
+	   </div></div>
+
+	   <div class="row"><div class="span6">
+	   		<h3>Save Space</h3>
+		   <p>Unbound doesn't create a separate photo library like other photo apps. Instead, Unbound uses your existing file structure to create its albums. That means your photos aren't duplicated and you save space. </p>
+	   </div>
+
+		   <div class="span6">
+		   <h3>Easy & Direct Access</h3>
+		   <p>Using the file structure also means that you can edit, copy, delete, and move your photos using the Finder, Photoshop, or any other app. Unbound watches the files and stays perfectly up-to-date.</p>
+	   </div>
+
+	   </div>
+
+	    <div class="row"><div class="span12"><div class="seperator"></div></div></div>
+
+	   <div class="row">
+	   <div class="span12">
+		   <h2>One Place for All Your Photos</h2>
+
+
+	   </div></div>
+
+	   <div class="row">
+	   <div class="span6 centered">
+		   <img src="img/unbound-dropbox-sync.jpg" alt="Sync all your Devices using Drobpox"/>
+	   </div>
+	   <div class="span6">
+
+	   <div class="">
+	   <h3>Effortlessly Sync Using Dropbox</h3>
+		   <p>Do you want to sync your photo albums with your iPhone, iPad or even multiple Macs? Combine Unbound with Dropbox and you can organize and upload your photos from anywhere and have the changes automatically synced to all your devices. <a href="dropbox.html">Learn more about syncing with Dropbox.</a></p>
+	   </div>
+	   </div>
+	   </div>
+
+	   <div class="row"><div class="span12"><div class="seperator"></div></div></div>
+
+	    <div class="row">
+	   <div class="span12">
+		   <h2>All the Details You Expect</h2>
+		   <p class="centered">Play slideshows, view all exif data, and even view photo locations on a map.</p>
+
+
+	   </div>
+	    </div>
+
+	   <div  class="row">
+	   <div class="span3 centered"><img class="detail" src="img/detail-slideshow.jpg" alt="Play Slideshows"/></div>
+	   <div class="span3 centered"><img class="detail" src="img/detail-exif.jpg" alt="View Exif Data"/></div>
+	   <div class="span3 centered"><img class="detail" src="img/detail-map.jpg" alt="Location on Map"/></div>
+	   <div class="span3 centered"><img class="detail" src="img/detail-share.jpg" alt="Share your Photos"/></div>
+	   </div>
+
+
+	   <div class="row"><div class="span12"><div class="seperator"></div></div></div>
+
+	   	   <div class="row">
+
+	   	   <div class="span8 offset2 centered">
+
+	   	   <p>Download Unbound for Mac today.</p>
+
+	   <div class="centered appstorelink">
+	      <!-- <a class="blueapplink downloadform" href="#mc_embed_signup"  onClick="javascript: _gaq.push(['_trackPageview', '/open_download_form']); " target="_blank"><img src="img/Download_Trial.svg" width=200 alt="Available on the App Store" /></a>-->
+
+	      <a class="blueapplink" href="https://itunes.apple.com/us/app/unbound/id690375005?ls=1&mt=12"  onClick="javascript: _gaq.push(['_trackPageview', '/open_itunes']); " target="_blank"><img src="img/Available_on_the_App_Store.svg" width=200 alt="Available in the App Store" /></a>
+
+	      <br/><br/><a href="http://unboundapp.com">Or check out Unbound for iPhone and iPad →</a><br/><br/>
+
+	   </div>
+	      <!--
+	      <div class="socialbuttons">
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FFlickring-for-iPad%2F243098835770951&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=235637449853856" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+				<g:plusone></g:plusone>
+				</div>
+		   </div>
+		   -->
+
+	      </div>
+
+	   	   </div>
+
+
+
+
+	   <!-- Footer Divider  -->
+
+	   <div class="row-fluid dropshadowrow reverseshadow"></div>
+
+	<!-- Pixite Section -->
+<!--
+	<div class="row pixiterow">
+	   <div class="span3 offset2 logoholder"><a href="http://www.pixiteapps.com"><img src="img/pixite-logo.jpg" alt="Pixite Apps" /><br/><img src="img/pixite-wordmark.jpg" alt="Pixite Apps" /></a></div>
+
+	   <div class="span5 frontcontent"><p><a href="http://www.pixiteapps.com/about" title="About Us" target="_blank">We’re Pixite</a>. We created Unbound. You can check out our <a href="http://www.pixiteapps.com">other apps</a>, follow us on <a onclick="javascript:_gaq.push(['_trackPageview', '/out/twitter.com/pixiteapps']);" title="follow us on twitter" href="http://twitter.com/pixiteapps" target="_blank">twitter</a> or <a href="http://pixiteapps.com/contact-form">contact us</a>.</p></div>
+
+   </div>
+ -->
+   <!-- End Pixite Section -->
+
+	  <!-- end textured bg area -->
+
+
+	   <footer>
+<!--
+	   <div class="footermenu">
+
+	   <ul class="footernav">
+	   <li><a href="http://pixiteapps.com/contact-form">Contact Us</a></li>
+	   <li><a href="http://www.pixiteapps.com/privacy-policy/">Privacy Policy</a></li>
+	   <li><a href="http://www.pixiteapps.com/" target="_blank">Pixite Apps</a></li>
+	    <li><a href="http://www.pixiteapps.com/about" target="_blank">Our Team</a></li>
+	   </ul>
+	   </div>
+
+	  <div style="clear: both;"></div>
+-->
+	  <p class="copy">&copy; 2016 Analog Ocean Ltd.</p>
+
+	   </footer>
+
+    </div> <!-- /container -->
+
+
+</div>
+
+
+
+ <!-- Begin MailChimp Signup Form -->
+
+<div style="display: none;">
+<div id="mc_embed_signup" class="download_form centered">
+<form action="" method="" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+<div class="mc-field-group centered">
+	Sign up below and download our free trial.<br/>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"  placeholder="Enter your email address" style="width: 80%;">
+
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none">There was an error adding your email to the list!</div>
+		<div class="response" id="mce-success-response" style="display:none">You've been added to the Unbound email list!</div>
+	</div>	<div class="clear"><input type="submit" class="btn btn-info" value="Download" name="subscribe" id="mc-embedded-subscribe" class="button">
+
+	</div>
+</form>
+
+<div id="form-download-info" style="display:none"><p>Your download will begin in a few seconds. Click <a href="" id="downloadLink">here</a> to start it manually.</p></div>
+</div>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+<!-- Extra Screenshots not linked to specific images in page -->
+<div style="display: none;">
+	    <a class="screenshots" rel="screenshots" href="screenshots/screenshot-4.jpg" title="Unbound Fullscreen Photo">2</a>
+	    <a class="screenshots" rel="screenshots" href="screenshots/screenshot-5.jpg" title="Unbound Fullscreen Photo with Info">3</a>
+	    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+body {text-align: center; background-color: white; color: #4e4e4e; font-family: "Helvetica Neue" Helvetica, sans-serif; font-size: 16pt;}
+
+
+a {color: #222; text-decoration: underline}
+h2 {padding-top: 0px; color: #222; text-align: center; margin-bottom: 0px; font-size: 1.8em; clear: both; font-family: "HelveticaNeue-Light" "Helvetica Neue" Helvetica sans-serif; font-weight: normal;}
+h3 {margin-bottom: 0px; padding-bottom: 0px; font-size: 1.3em;  color: #222;font-family: "HelveticaNeue-Light" "Helvetica Neue" Helvetica sans-serif; font-weight: normal;}
+h4 {margin-bottom: 0px; padding-bottom: 0px; font-size: 1.1em;  color: #222;font-family: "HelveticaNeue-Light" "Helvetica Neue" Helvetica sans-serif; font-weight: normal;}
+p {margin-top: 5px;}
+ol {list-style-position: inside; padding-left: 0px;}
+li {margin-top: 10px;}
+
+
+.wrapper { margin: 8px auto 8px auto;}
+.iconheader {margin: 0px; margin-bottom: 60px;}
+.icon {margin: 0px; margin-right: 10px; border: none; position: relative; top: 19px;}
+
+.content {text-align: left; margin: 15px;}
+.content img {border: 1px solid #727272;}
+
+.imageholder {text-align: center;}
+.content img {max-width: 100%;}
+
