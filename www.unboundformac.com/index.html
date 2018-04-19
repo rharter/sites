@@ -10,6 +10,17 @@
 	  })(window,document,'script','dataLayer','GTM-P69Q4J3');</script>
 	  <!-- End Google Tag Manager -->
 	  
+	  <!-- Global site tag (gtag.js) - Google AdWords: 1006477582 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1006477582"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'AW-1006477582');
+		</script>
+
+	  
     <meta charset="utf-8">
     <title>Unbound for Mac - A faster, simpler photo manager.</title>
 
@@ -28,7 +39,7 @@
     <!-- Styles -->
     <link href="style.css" rel="stylesheet">
 	
-	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,700" rel="stylesheet">
 
   </head>
 
@@ -45,10 +56,10 @@
 			  <h1>Unbound for Mac</h1>
 			  <p>A faster, simpler photo manager.</p>
 			  <div class="buttons">
-				  <a href="downloads/Unbound-latest.zip" class="try">Try it</button>
+				  <a href="#!" onClick="javascript:gtag_report_conversion('https://dl.devmate.com/com.analog-ocean.Unbound/Unbound.zip', 'trial', 0.27);" class="try">Try it</a>
 				  <a href="#!" class="buy" onclick="Paddle.Checkout.open({product:519430});">Buy it</a>
 			  </div>
-			  <p class="appstore">Unbound is also available on the <a href="https://itunes.apple.com/us/app/unbound/id690375005?ls=1&mt=12" onClick="javascript: _gaq.push(['_trackPageview', '/open_itunes']); ">Mac App Store</a><p>
+			  <p class="appstore">Unbound is also available on the <a href="#!"  onClick="javascript: gtag_report_conversion('https://itunes.apple.com/us/app/unbound/id690375005?ls=1&mt=12', 'itunes', 0.55)">Mac App Store</a><p>
 		  </section>
 		  
 		  <!-- Intro -->
@@ -97,7 +108,7 @@
 		  <section class="closer">
 			  <img src="images/unbound_icon.png" />
 			  <h1>Unbound for Mac</h1>
-			  <a href="https://itunes.apple.com/us/app/unbound/id690375005?ls=1&mt=12" onClick="javascript: _gaq.push(['_trackPageview', '/open_itunes']); "><img src="images/badge-mac.svg" width=180 alt="Download on the Mac App Store" /></a>
+			  <a href="https://itunes.apple.com/us/app/unbound/id690375005?ls=1&mt=12" onClick="javascript: gtag_report_conversion('https://itunes.apple.com/us/app/unbound/id690375005?ls=1&mt=12', 'itunes', 0.55); "><img src="images/badge-mac.svg" width=180 alt="Download on the Mac App Store" /></a>
 		  </section>
 		  
 		  <section class="footer">
@@ -107,6 +118,23 @@
 	  </section>
 	  
   </body>
+	<script>
+	function gtag_report_conversion(url, source, value) {
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-1006477582/vXcACL7Gi3sQjsL23wM',
+	      'value': value,
+	      'currency': 'USD',
+	      'transaction_id': source,
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	</script>
   <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 	<script type="text/javascript">
 		Paddle.Setup({
