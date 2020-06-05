@@ -9,5 +9,6 @@ if [ "$#" -lt 1 ];then
   exit 1
 fi
 
-SITE=${1}
-gsutil rsync -R ${SITE} gs://${SITE}
+pushd ${SITE}
+firebase deploy
+popd
